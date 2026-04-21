@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La reprise qui ne répare rien — Market Brief N°01 par Robin Dubosq</title>
+<meta name="description" content="+4 % de recrutements cadres en 2026, −12 % d'accès pour les débutants. Pourquoi la lecture officielle du marché passe à côté de l'enjeu. Une analyse de Robin Dubosq.">
+<meta name="author" content="Robin Dubosq">
+<meta name="keywords" content="recrutement cadres 2026, Apec, marché du travail, RH, jeunes diplômés, talent acquisition, Robin Dubosq, Market Brief">
+
+<!-- Open Graph (LinkedIn, Facebook) -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="La reprise qui ne répare rien — Market Brief N°01">
+<meta property="og:description" content="+4 % de recrutements cadres en 2026, −12 % d'accès pour les débutants. Pourquoi la lecture officielle du marché passe à côté de l'enjeu.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta property="article:author" content="Robin Dubosq">
+<meta property="article:published_time" content="2026-04-21">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La reprise qui ne répare rien — Market Brief N°01">
+<meta name="twitter:description" content="+4 % de recrutements cadres en 2026, −12 % d'accès pour les débutants.">
+<meta name="twitter:image" content="og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A0A0A'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' font-family='Georgia,serif' fill='%23A6192E' font-weight='600'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --ink-soft: #1E1E1E;
+    --paper: #FFFFFF;
+    --paper-warm: #FAF8F5;
+    --rule: #D7D2C8;
+    --muted: #6B6258;
+    --accent: #A6192E;
+    --accent-dark: #7E1322;
+    --max-content: 720px;
+    --max-wide: 1080px;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink-soft);
+    background: var(--paper);
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ============== STICKY HEADER ============== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .site-header-inner {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-top: 2px solid var(--accent);
+    padding-top: 4px;
+  }
+  .nav-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn-primary:hover {
+    background: var(--accent);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--rule);
+  }
+  .btn-ghost:hover {
+    border-color: var(--ink);
+  }
+  .btn svg { width: 14px; height: 14px; }
+
+  /* ============== HERO ============== */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 24px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; height: 3px;
+    background: var(--accent);
+  }
+  .hero-inner {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 60px;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #C8C2B8;
+    font-weight: 500;
+  }
+  .hero-meta .accent { color: var(--accent); font-weight: 600; }
+  .hero-meta .sep {
+    width: 24px;
+    height: 1px;
+    background: #6B6258;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 24px;
+    display: inline-block;
+    padding-left: 50px;
+    position: relative;
+  }
+  .hero-eyebrow::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 50%;
+    width: 36px; height: 1.5px;
+    background: var(--accent);
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(36px, 7.5vw, 84px);
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    margin-bottom: 32px;
+    max-width: 14ch;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 400;
+  }
+
+  .hero-deck {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(18px, 2.2vw, 24px);
+    line-height: 1.45;
+    color: #D8D2C6;
+    max-width: 38ch;
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 48px;
+  }
+
+  .hero-author {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding-top: 32px;
+    border-top: 1px solid #2A2A2A;
+    max-width: 500px;
+  }
+  .hero-author img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    padding: 2px;
+    background: var(--ink);
+  }
+  .hero-author-text { font-size: 14px; line-height: 1.5; }
+  .hero-author-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--paper);
+    margin-bottom: 2px;
+  }
+  .hero-author-role {
+    color: #A8A196;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ============== ARTICLE ============== */
+  .article {
+    max-width: var(--max-content);
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+  }
+
+  .section-kicker {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 64px;
+  }
+  .section-kicker:first-child { margin-top: 0; }
+
+  .article h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(26px, 4vw, 36px);
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 28px;
+    letter-spacing: -0.005em;
+  }
+  .article h2::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 2px;
+    background: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .article h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--ink);
+    margin-top: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 0.005em;
+  }
+
+  .article p {
+    margin-bottom: 20px;
+    color: var(--ink-soft);
+  }
+
+  .article p strong { color: var(--ink); font-weight: 600; }
+
+  .lead {
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .lead::first-letter {
+    font-family: 'Playfair Display', serif;
+    float: left;
+    font-size: 84px;
+    line-height: 0.85;
+    padding: 6px 12px 0 0;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ============== STATS BAND ============== */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 48px 0;
+    padding: 36px 28px;
+    background: var(--paper-warm);
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+  }
+  .stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4.5vw, 40px);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .stat-value .unit {
+    font-size: 0.55em;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  /* ============== PULL QUOTE ============== */
+  .pullquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(20px, 2.5vw, 26px);
+    line-height: 1.4;
+    color: var(--ink);
+    padding: 24px 0 24px 24px;
+    border-left: 3px solid var(--accent);
+    margin: 36px 0;
+  }
+
+  /* ============== ACTION CARDS ============== */
+  .actions {
+    list-style: none;
+    margin: 32px 0;
+    counter-reset: action;
+  }
+  .actions li {
+    counter-increment: action;
+    position: relative;
+    padding: 24px 0 24px 56px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .actions li:last-child { border-bottom: none; }
+  .actions li::before {
+    content: counter(action, decimal-leading-zero);
+    position: absolute;
+    left: 0; top: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .actions li strong {
+    display: block;
+    color: var(--ink);
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  /* ============== CLOSING ============== */
+  .closing {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 24px;
+    margin-top: 80px;
+  }
+  .closing-inner {
+    max-width: var(--max-content);
+    margin: 0 auto;
+  }
+  .closing .section-kicker { color: var(--accent); margin-top: 0; }
+  .closing h2 {
+    color: var(--paper);
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(28px, 4.5vw, 40px);
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+  .closing h2::before { background: var(--accent); }
+  .closing p { color: #D8D2C6; margin-bottom: 16px; }
+  .cta-question {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(20px, 2.4vw, 24px);
+    color: var(--paper);
+    border-left: 2px solid var(--accent);
+    padding-left: 24px;
+    margin-top: 32px;
+    line-height: 1.45;
+  }
+
+  /* ============== CTA ZONE ============== */
+  .cta-zone {
+    background: var(--paper-warm);
+    padding: 60px 24px;
+    text-align: center;
+  }
+  .cta-inner {
+    max-width: var(--max-content);
+    margin: 0 auto;
+  }
+  .cta-zone .section-kicker {
+    margin-top: 0;
+    text-align: center;
+  }
+  .cta-zone h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(24px, 3.5vw, 32px);
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .cta-zone p {
+    color: var(--muted);
+    max-width: 50ch;
+    margin: 0 auto 28px;
+    font-size: 16px;
+  }
+  .cta-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ============== FOOTER ============== */
+  .site-footer {
+    background: var(--paper);
+    border-top: 1px solid var(--rule);
+    padding: 48px 24px 36px;
+  }
+  .footer-inner {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+  }
+  .footer-about h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .footer-about p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 50ch;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+  }
+  .footer-sources h4 {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .footer-sources p {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .footer-bottom {
+    max-width: var(--max-wide);
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-sig {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 16px;
+  }
+  .footer-sig .sub {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .footer-share {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; height: 36px;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    color: var(--ink);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .share-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .share-btn svg { width: 16px; height: 16px; }
+
+  /* ============== MARGIN NOTE ============== */
+  .margin-note {
+    font-style: italic;
+    color: var(--muted);
+    padding: 12px 0 12px 16px;
+    border-left: 2px solid var(--rule);
+    margin: 24px 0;
+    font-size: 15px;
+  }
+
+  /* ============== RESPONSIVE ============== */
+  @media (max-width: 720px) {
+    .site-header-inner { padding: 12px 18px; }
+    .brand { font-size: 13px; letter-spacing: 0.2em; }
+    .btn { padding: 8px 14px; font-size: 12px; }
+    .btn span.btn-label-long { display: none; }
+
+    .hero { padding: 56px 20px 72px; }
+    .hero-meta { font-size: 10px; gap: 10px; margin-bottom: 40px; }
+    .hero-meta .sep { width: 16px; }
+    .hero-eyebrow { padding-left: 0; font-size: 11px; }
+    .hero-eyebrow::before { display: none; }
+    .hero-deck { padding-left: 16px; }
+    .hero-author { gap: 14px; padding-top: 24px; }
+    .hero-author img { width: 48px; height: 48px; }
+
+    .article { padding: 56px 20px 40px; }
+    .stats {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 28px 22px;
+    }
+    .pullquote { padding-left: 18px; }
+    .actions li { padding-left: 44px; }
+    .actions li::before { font-size: 22px; }
+
+    .closing { padding: 56px 20px; }
+    .cta-question { padding-left: 18px; }
+
+    .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+  }
+
+  /* ============== ANIMATIONS ============== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-meta { animation: fadeUp 0.6s ease 0.05s both; }
+  .hero-eyebrow { animation: fadeUp 0.7s ease 0.15s both; }
+  .hero-title { animation: fadeUp 0.8s ease 0.25s both; }
+  .hero-deck { animation: fadeUp 0.8s ease 0.4s both; }
+  .hero-author { animation: fadeUp 0.8s ease 0.55s both; }
+
+  /* Reduced motion accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ============== PRINT ============== */
+  @media print {
+    .site-header, .cta-zone, .site-footer { display: none; }
+    .hero, .closing { background: white !important; color: black !important; }
+    .hero *, .closing * { color: black !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== STICKY HEADER ============== -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="#" class="brand">Market Brief</a>
+    <nav class="nav-actions">
+      <a href="Market-Brief-N01.pdf" class="btn btn-ghost" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <span class="btn-label-long">Télécharger le </span>PDF
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=__SITE_URL__" class="btn btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        Partager
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-meta">
+      <span class="accent">N° 01 / 2026</span>
+      <span class="sep"></span>
+      <span>Avril 2026</span>
+      <span class="sep"></span>
+      <span>Lecture 8 min</span>
+    </div>
+    <div class="hero-eyebrow">Marché cadres &middot; France</div>
+    <h1 class="hero-title">La reprise<br>qui ne <em>répare rien.</em></h1>
+    <p class="hero-deck">
+      +4 % de recrutements cadres en 2026, et &minus;12 % d'accès pour les débutants par rapport
+      au pic de 2023. Pourquoi la lecture officielle du marché passe à côté de l'enjeu.
+    </p>
+    <div class="hero-author">
+      <img src="profile.jpg" alt="Robin Dubosq">
+      <div class="hero-author-text">
+        <div class="hero-author-name">Robin Dubosq</div>
+        <div class="hero-author-role">Recrutement &amp; Analyse marché cadres</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PARTIE 1 ============== -->
+<article class="article">
+  <div class="section-kicker">Partie 1 &middot; Ce qui change vraiment</div>
+  <h2>Le marché cadre repart, mais il achète surtout ce qu'il a refusé de former.</h2>
+
+  <p class="lead">
+    Les chiffres sont tombés et le récit officiel est déjà prêt. Il va circuler toute l'année,
+    et il n'est pas faux. Simplement, il ne raconte qu'une moitié de l'histoire, et la décision
+    stratégique se joue dans l'autre.
+  </p>
+
+  <p>
+    Après 330 700 recrutements cadres en 2023, 303 400 en 2024 et 294 500 en 2025, l'Apec projette
+    <strong>305 800 recrutements en 2026</strong>. Le communiqué retient « le marché cadre repart »,
+    ce qui est exact sur les volumes mais reste à côté de l'enseignement principal.
+  </p>
+
+  <p>
+    La reprise 2026 n'est pas distribuée uniformément, elle est <strong>ciblée</strong>. L'Apec
+    indique que les entreprises privilégient nettement les profils ayant six à dix ans
+    d'expérience, jugés immédiatement opérationnels. Pour les cadres de moins de six ans, la
+    progression attendue se limite à 1 %, soit 137 610 embauches en 2026, près de vingt mille
+    de moins qu'au pic de 2023.
+  </p>
+
+  <div class="stats">
+    <div>
+      <div class="stat-value">137<span class="unit">&thinsp;610</span></div>
+      <div class="stat-label">Recrutements de cadres<br>de moins de 6 ans en 2026</div>
+    </div>
+    <div>
+      <div class="stat-value">+1<span class="unit">%</span></div>
+      <div class="stat-label">Progression vs 2025<br>pour les profils débutants</div>
+    </div>
+    <div>
+      <div class="stat-value">&minus;10,3<span class="unit">pts</span></div>
+      <div class="stat-label">Taux net d'emploi CGE<br>promo 2022 &rarr; promo 2024</div>
+    </div>
+  </div>
+
+  <p>
+    Côté Conférence des Grandes Écoles, le taux net d'emploi des promotions sortantes est passé de
+    90,5 % pour la promo 2022 à 80,2 % pour la promo 2024. Dix points en deux ans. L'Apec observe
+    dans son panel Bac+5 que 84 % jugent leur recherche difficile, 57 % ont envoyé plus de 30
+    candidatures, 70 % se disent prêts à renoncer au CDI et 51 % au statut cadre.
+  </p>
+
+  <div class="pullquote">
+    « Le marché ne rouvre pas les portes. Il en ouvre quelques-unes, sélectivement, au bénéfice
+    des profils qui ont déjà été formés ailleurs. »
+  </div>
+
+  <p>
+    Le contexte géoéconomique rend cette sélection rationnelle à court terme. La Banque de France
+    table sur 1 % de croissance en 2026, avec un investissement qui redémarre prudemment. Entre
+    les tensions commerciales, la volatilité énergétique et les arbitrages budgétaires européens,
+    la plupart des directions préfèrent acheter du prêt-à-produire plutôt que d'investir dans le
+    prêt-à-former. Recruter un profil de six à dix ans, c'est s'épargner du délai, gagner en
+    autonomie immédiate, réduire le risque opérationnel. La logique se défend sur un trimestre.
+    Sur un cycle, elle devient myope.
+  </p>
+
+  <!-- PARTIE 2 -->
+  <div class="section-kicker">Partie 2 &middot; Pourquoi cela compte pour vous</div>
+  <h2>Une mécanique que peu de comités exécutifs prennent le temps d'instruire.</h2>
+
+  <p>
+    Les profils de six à dix ans d'expérience que vous voulez recruter en 2026 sont ceux qui sont
+    entrés en poste <strong>entre 2016 et 2020</strong>. Ceux que vous chercherez en 2028-2030 sont,
+    par construction, ceux qui entrent en poste <strong>cette année</strong>. Quand le marché junior
+    se contracte deux ou trois années consécutives, le vivier intermédiaire se resserre
+    mécaniquement à l'horizon 2027-2030.
+  </p>
+
+  <div class="margin-note">
+    La décision de ne pas rouvrir de postes juniors en 2026 ne coûte rien cette année.
+    Elle coûtera beaucoup dans trois ans.
+  </div>
+
+  <h3>Sur le recrutement</h3>
+  <p>
+    Les fonctions les plus exposées à la reprise (informatique +5 %, ingénierie-R&amp;D +7 %,
+    conseil +6 %, banque-assurance +9 %) sont aussi celles où la pression salariale sur les
+    profils intermédiaires va monter le plus vite. Si votre grille interne n'a pas bougé depuis
+    2023, attendez-vous à des écarts inconfortables entre vos collaborateurs en poste et les
+    nouveaux arrivants.
+  </p>
+
+  <h3>Sur l'attractivité</h3>
+  <p>
+    Annoncer en interne qu'on recrute sur les postes seniors sans piste lisible pour les débutants
+    revient à émettre deux signaux contradictoires. Vis-à-vis des candidats confirmés, l'entreprise
+    affiche une dynamique de croissance. Vis-à-vis des écoles, des alternants et des candidatures
+    spontanées, elle envoie l'inverse. Le second message circule plus vite, et il s'imprime durablement.
+  </p>
+
+  <h3>Sur la mobilité interne</h3>
+  <p>
+    Quand le vivier junior fait défaut, les managers intermédiaires restent en place faute de
+    relève identifiable. La fermeture du marché débutant produit ainsi un effet de bouchon
+    interne, qui se ressent rarement la première année et devient sensible dès la deuxième.
+  </p>
+
+  <h3>Sur les compétences</h3>
+  <p>
+    Les entreprises qui ont arrêté l'alternance et le stage long en 2024-2025 ont aussi arrêté de
+    transmettre leurs savoir-faire métier. Quand on les rallumera, il faudra six à douze mois pour
+    reconstruire les dispositifs, retrouver des tuteurs, restaurer la crédibilité auprès des écoles
+    partenaires.
+  </p>
+
+  <h3>Sur la marque employeur</h3>
+  <p>
+    Le silence des deux dernières années a déjà laissé une trace. 24 % des Bac+5 interrogés par
+    l'Apec qualifient leur emploi actuel de « job alimentaire », et cette génération-là est celle
+    qui alimentera les classements employeur des cinq prochaines années.
+  </p>
+
+  <div class="pullquote">
+    Les entreprises qui se battent en 2026 pour recruter des profils de six à dix ans sont
+    largement les mêmes qui ont réduit leurs recrutements juniors en 2024 et 2025.
+  </div>
+
+  <!-- PARTIE 3 -->
+  <div class="section-kicker">Partie 3 &middot; Ce qu'il faut faire maintenant</div>
+  <h2>Trois décisions à prendre dans les six prochains mois, pas dans les dix-huit.</h2>
+
+  <ol class="actions">
+    <li>
+      <strong>Mesurer la pyramide d'expérience réelle de vos recrutements 2023-2025.</strong>
+      Non pas ce que projette le plan stratégique, mais ce que montrent les embauches effectives.
+      Si vous constatez un creux marqué sur les 0-3 ans deux années de suite, vous portez déjà
+      une dette d'intégration. Elle se quantifie, et elle se rattrape mieux maintenant que dans
+      deux ans.
+    </li>
+    <li>
+      <strong>Rouvrir des postes juniors ciblés, plutôt que généraux.</strong>
+      En priorité sur les fonctions où la reprise est confirmée, avec un onboarding piloté sur
+      douze mois, des attendus explicites à 30, 90 et 180 jours, et un manager nommément
+      responsable de la montée en puissance. Les approches par défaut, où l'on attend de voir
+      comment le profil s'en sort, produisent précisément les 24 % de diplômés en emploi
+      alimentaire que mesure l'Apec.
+    </li>
+    <li>
+      <strong>Requalifier l'alternance et le stage long.</strong>
+      Pour les sortir du statut de variable d'ajustement budgétaire et les traiter comme des
+      preuves d'opérationnalité pré-recrutement. Un alternant correctement piloté pendant deux
+      ans correspond exactement au profil intermédiaire que tout le marché s'arrachera dans cinq
+      ans, à un coût de formation aujourd'hui sans rapport avec le coût d'acquisition externe que
+      vous paierez alors.
+    </li>
+  </ol>
+</article>
+
+<!-- ============== CLOSING ============== -->
+<section class="closing">
+  <div class="closing-inner">
+    <div class="section-kicker">L'essentiel</div>
+    <h2>La bonne question n'est pas combien.<br>Elle est pour qui.</h2>
+    <p>
+      Les comités exécutifs qui s'arrêteront sur la ligne « +4 % de recrutements cadres en 2026 »
+      cocheront la case marché favorable et passeront à la diapositive suivante. Ceux qui liront
+      « +1 % seulement pour les moins de six ans » comprendront que la reprise contourne les
+      débutants pour aller chercher, sur le marché et au prix fort, des profils qu'ils auraient pu
+      former eux-mêmes l'année dernière.
+    </p>
+    <p>
+      Sur cinq ans, l'écart entre ces deux lectures se compte en plusieurs points de masse
+      salariale et en deux ou trois recrutements stratégiques manqués.
+    </p>
+    <div class="cta-question">
+      Quelle part de votre vivier 2028-2030 êtes-vous en train de construire, ou de ne pas
+      construire, cette année&nbsp;?
+    </div>
+  </div>
+</section>
+
+<!-- ============== CTA ZONE ============== -->
+<section class="cta-zone">
+  <div class="cta-inner">
+    <div class="section-kicker">Ouvrir la discussion</div>
+    <h2>Une question utile à poser cette semaine en Comex.</h2>
+    <p>
+      Sur vos 100 derniers recrutements cadres, quelle est la part des moins de 3 ans
+      d'expérience&nbsp;? Les ordres de grandeur partagés en commentaire seront agrégés
+      anonymement.
+    </p>
+    <div class="cta-buttons">
+      <a href="https://www.linkedin.com/in/" class="btn btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        Réagir sur LinkedIn
+      </a>
+      <a href="Market-Brief-N01.pdf" class="btn btn-ghost" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Télécharger en PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-about">
+      <h3>Market Brief</h3>
+      <p>
+        Une note mensuelle qui croise les signaux du marché cadres, les décisions RH concrètes et
+        l'arrière-plan macroéconomique. Sans slogan. Sans prédiction gratuite. Avec les sources.
+      </p>
+    </div>
+    <div class="footer-sources">
+      <h4>Sources &amp; méthode</h4>
+      <p>
+        Apec, Prévisions de recrutements 2026 (avril 2026, panel 8 100 entreprises). Apec, Jeunes
+        diplômé&middot;es Bac+5 (novembre 2025, n&nbsp;=&nbsp;1 595). CGE, Enquête Insertion 2025
+        (104 106 questionnaires). Banque de France, Projections macroéconomiques, décembre 2025.
+        Tous les chiffres cités sont issus des publications officielles, sans extrapolation.
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-sig">
+      Robin Dubosq
+      <span class="sub">Market Brief &middot; N° 01 / 2026</span>
+    </div>
+    <div class="footer-share">
+      <span>Partager</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=__SITE_URL__" class="share-btn" target="_blank" rel="noopener" aria-label="Partager sur LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+      </a>
+      <a href="mailto:?subject=Market%20Brief%20N%C2%B001%20%E2%80%94%20La%20reprise%20qui%20ne%20r%C3%A9pare%20rien&body=%C3%80%20lire%20%3A%20__SITE_URL__" class="share-btn" aria-label="Partager par email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Replace __SITE_URL__ with the actual current URL after deployment
+  // This makes the share buttons work regardless of where the site is hosted
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentUrl = encodeURIComponent(window.location.href);
+    document.querySelectorAll('a[href*="__SITE_URL__"]').forEach(function(link) {
+      link.href = link.href.replace(/__SITE_URL__/g, currentUrl);
+    });
+  });
+</script>
+
+</body>
+</html>
